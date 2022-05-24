@@ -1,0 +1,7 @@
+# Construct an integer from the float 12.345
+f = 12.345
+print(int(f))  # банально int
+
+f = 12.345
+digit = str(f).replace('.', '')
+print(int(digit) + 2) # добавил 2, что б показать, что это digit является int
