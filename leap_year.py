@@ -6,6 +6,10 @@
 # делится без остатка на 400, это високосный год
 
 year = int(input('Enter year: '))
+days = 366 if not year %4 and year % 100 or not year % 400 else 365
+print(days)
+
+year = int(input('Enter year: '))
 if (not year % 4) or (not year % 100) and (not year % 400):
     print(year, 'Leap year and has 366 days')
 else:
